@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="created" content="2025-07-23T13:45:08.761161821" />
+	<meta name="changed" content="2025-07-31T05:23:40.587245002" />
+
+	<link rel="stylesheet" href="index-style.css">
+	<title>Melissa's Pathology Report Webpage</title>
+</head>
+
+<body>
+	<header class="hero">
+		<h1>Exploring Pathogenic Fungi in <i><b>Salix spp.</b></i></h1>
+		<p class="tagline">Forest Pathology Report by Ioksin Kueh</p>
+	</header>
+
+	<div class="font-controls">
+		<button onclick="decreaseFont()">A–</button>
+		<button onclick="increaseFont()">A+</button>
+	</div>
+
+	<nav>
+		<ul>
+			<li><a href="#intro">Introduction</a></li>
+			<li><a href="#method">Material and Methods</a></li>
+			<li><a href="#result">Result</a></li>
+			<li><a href="#discussion">Discussion</a></li>
+			<li><a href="#conclusion">Conclusion</a></li>
+			<li><a href="#references">References</a></li>
+		</ul>
+	</nav>
+	<div class="content">
+		<section id="intro">
+
+			<h1>Introduction</h1>
+			<p style="text-align:center;text-indent:0em">In this report, I am going to lead you through the identification offungi living in willows. </p>
+
+			<h2 id="willow-intro">What are willows?</h2>
+			<p>Willows are a group of trees that belongs to the <a href="https://en.wikipedia.org/wiki/Genus">genus</a> <a href="https://en.wikipedia.org/wiki/Willow"><i>Salix</i></a> (<a href="https://en.wikipedia.org/wiki/Carl_Linnaeus">Linnaenus</a>, 1753) with about 350 species and numerous hybrids and cultivars. They are familiar sights along rivers, wetlands, and forest edges across the Northern Hemisphere. Willow species that have a broader leaves are referred to as sallow while shrubs with narrow leaves yet are known as osiers. Willow tress are generally tolerable to wide range of environments. However, they can be prone to a number of pests and diseases. </p>
+
+			<p class="img-cap"><a href="https://commons.wikimedia.org/wiki/File:Salix_alba_Morton.jpg#/media/File:Salix_alba_Morton.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Salix_alba_Morton.jpg" alt="Salix alba Morton.jpg" height="250" width="250"></a>
+				<br>By Bruce Marlin - <a rel="nofollow" class="external free" href="http://www.cirrusimage.com/tree_golden_weeping_willow.htm">Own work</a>, <a href="https://creativecommons.org/licenses/by/3.0" title="Creative Commons Attribution 3.0">CC BY 3.0</a>, uploaded to <a href="https://commons.wikimedia.org/w/index.php?curid=5726820">Wikipedia</a></p>
+
+			<h2 id="willow-important">Why are willows important?</h2>
+			<p>Willows are used traditionally in many countries and are planted in agricultural lands under short-rotation intensive culture. They contribute to woody biomass production and soil remediation<span class="citation"><a data-ref="#r29"><sup>[1]</sup></a><span class="tooltip"></span></span>. Almost all structures above soil are utilized in many ways. The European Commission<span class="citation"><a href="#r15"><sup>[2]</sup></a><span class="tooltip"></span></span> even approved to “extend the scope of the application from <a href="https://en.wikipedia.org/wiki/Salix_alba"><i>Salix alba</i></a> bark to <i>Salix spp.</i> cortex.”</p>
+			<p>The woody material of willows are usually more flexible to bend and tender. Therefore, they are traditionally used in handcrafts such as baskets, fishing traps, toys, handles, and sweat lodges. They are also used in the manufacture of paper, boxes, brooms, cricket bats, cradle boards, and other furnitures.</p>
+			<p>Additionally, willows are applied as traditional herbal medicinal products<span class="citation"><a data-ref="#r17"><sup>[3]</sup></a><span class="tooltip"></span></span>. Willow bark contains a chemical called <a href="https://en.wikipedia.org/wiki/Salicin">salicin</a>, which is similar to <a href="https://en.wikipedia.org/wiki/Aspirin">aspirin</a>. It reduces pain and fever, yet it would very likely slow blood clotting as well. People commonly use willow bark for back pain, osteoarthritis, fever, flu, muscle pain, and many other conditions, but there is no good scientific evidence to support most of these uses<span class="citation"><a data-ref="#r45"><sup>[4]</sup></a><span class="tooltip"></span></span>. The cooked willow catkins and inner barks are also famine foods.</p>
+			<p>The stems are harvested frequently (around every 2 to 4 years<span class="citation"><a data-ref="#r43"><sup>[5]</sup></a><span class="tooltip"></span></span>) in many places such as Quebec, Canada<span class="citation"><a data-ref="#r27"><sup>[6]</sup></a><span class="tooltip"></span></span>. The wounds caused by frequent coppicing inevitably opens up entrances for pathogens to enter.</p>
+
+			<h2 id="willow-diseases">Common fungal diseases on willows</h2>
+			<p>Common fungal pathogens that infect <i>Salix spp.</i> include several species from the genera <a href="https://en.wikipedia.org/wiki/Botryosphaeria"><i>Botryosphaeria</i></a>, <a href="https://en.wikipedia.org/wiki/Melampsora"><i>Melampsora</i></a>, and <a href="https://en.wikipedia.org/wiki/Elsino%C3%AB"><i>Elsinoë</i></a>. <i>B. dothidea</i> was isolated from stem cankers on <i>Salix magnifica</i><span class="citation"><a data-ref="#r39"><sup>[7]</sup></a><span class="tooltip"></span></span>. Rust fungi, such as <i>Melampsora larici-epitea</i> and <i>Melampsora yezoensis</i>, have been identified as significant pathogens affecting various willow species, causing characteristic rust symptoms on leaves and stems</i><span class="citation"><a data-ref="#r7"><sup>[8]</sup></a><span class="tooltip"></span></span>. Additionally, <i>Elsinoë murrayae</i> has been reported to cause leaf spots on weeping willow, demonstrating its pathogenicity through significant cell death in infected tissues</i><span class="citation"><a data-ref="#r49"><sup>[9]</sup></a><span class="tooltip"></span></span>. Other ascomycetous fungi, including species from the Venturia complex, also contribute to willow diseases, particularly affecting leaves and bark</i><span class="citation"><a data-ref="#r43"><sup>[10]</sup></a><span class="tooltip"></span></span>.</p>
+
+			<h2 id="objectives">Objectives</h2>
+			<p>The following experiments serve as an slight glimpse to the golden method for fungi identification in plant pathology. The method applies modern techniques for molecular-based diagnosis of plant-infecting fungi</i><span class="citation"><a data-ref="#r19"><sup>[11]</sup></a><span class="tooltip"></span></span>.</p>
+		</section>
+
+		<section id="method">
+			<h1>Material and Methods</h1>
+			<p style="text-align:center;text-indent:0em">The identification of fungi of the infected area is the first step to find out which fungal pathogen is responsible for the disease. To search for the infected area on plants, it is common to look for partial dead or dying tissues, such as patches of yellow or red o black on leaves, and partial or all branches of leaf casting.</p>
+
+			<h2 id="sampling">Sampling</h2>
+			<p>The Salix spp. sample for this experiment is retrieved from the river side of Dreisam, Freiburg im Breisgau. At sight of an abnormal leaf or branch, the tissue where the abnormal parts border the normal tissue are to be sampled. Then the sample would be stored in a clean bag and transported back to laboratory.</p>
+
+			<h2 id="isolation">Isolation</h2>
+			<p>The sample is soaked in 70% alcohol for disinfection and further trimmed to less than 1 cm in all dimensions. The tissues pieces are scattered on Petri dishes with minimum essential medium and agarose gel. The mycelia would likely be visible on the gel upon a few days in room temperature depending on the different growing rate of fungus species. It is also possible to speed up the growth of the fungi with incubator. Here, the tissues sampled from <i>Salix spp.</i> was cultured on the dish for a week.</p>
+			<p>To isolate each fungus, simply cut a square equal or less than 2 mm by 2 mm within a range of a mycelia type with a disinfected scalpel blade. The cube of mycelia and agarose gel is then transferred to a new Petri dish with the mycelia side facing down, attaching to the surface of the new gel. The new Petri dishes are kept in room temperature or incubator for a few days with close observation of contamination or competitors on the dishes. If the isolated fungus forms two distinct colonies on the Petri dishes, they can be further isolated to new Petri dishes until a single colony is isolated on a Petri dish.</p>
+			<p>In this experiment, only three of the the isolations are proceeded to sequencing. They served as representations and not for a full interpretation of the whole infected tissue.</p>
+
+			<h2 id="sequencing">Sequencing</h2>
+			<p>The isolations are now ready to be extracted for sequencing. Photos are taken on both side of the Petri dish for identification via colony morphological traits. Then, the surface of the colony is scraped off using scalpel blades and transferred to an 1 mL eppendorf tube. </p>
+			<p>By increasing the copy number of <a href="https://en.wikipedia.org/wiki/Internal_transcribed_spacer">internal transcribed spacer (ITS)</a> region of <a href="https://en.wikipedia.org/wiki/Ribosomal_DNA">ribosomal DNA</a> through <a href="https://en.wikipedia.org/wiki/Polymerase_chain_reaction">Polymerase Chain Reaction (PCR)</a>, the sequences of the ITS are amplified. The samples are then diluted according to the length of DNA confirmed by <a href="https://en.wikipedia.org/wiki/Gel_electrophoresis">electrophoresis</a> and sequenced. </p>
+			<p>The ITS region is a non-coding region, flanked by highly conserved genes, exhibits sufficient interspecific variability to serve as a robust genetic barcode, particularly in fungi, plants, and certain invertebrates. It is reliable for identifying the species of the fungi samples</i><span class="citation"><a data-ref="#r37"><sup>[12]</sup></a><span class="tooltip"></span></span> with the help of the Basic Local Alignment Search Tool (BLAST)</i><span class="citation"><a data-ref="#r1"><sup>[13]</sup></a><span class="tooltip"></span></span> online genetic database</i><span class="citation"><a data-ref="#r3"><sup>[14]</sup></a><span class="tooltip"></span></span>.</p>
+		</section>
+
+		<p class="img-cap"><img src="image/Pathology-electrophoresis.jpg" alt="electrophoresis" height="250" width="250"><br>Figure 1: An example of electrophoresis. Sample 35 and 36 yielded above 500 base pairs in length and sample 37 was about 600 base-pair-long. Negative control (NC) proved contamination undetected.</p>
+
+		<section id="result">
+			<h1>Result</h1>
+			<p style="text-align:center;text-indent:0em">The <i>Salix spp.</i> sample had a border at the stem and leaves between the black dying tissues and the green lively tissues (Figure 2). After a week of culturing on the medium, mycelia stretches out from the tissues and was resampled to form isolated colonies on new dishes for another week of cultivation. The sequence of three isolated colonies are identified as following:</p>
+
+			<p class="img-cap"><img src="image/salix.jpg" alt="salix sample source" height="430"><br>Figure 2: A <i>Salix spp.</i> at the shore of Dreisam, Freiburg im Breisgau.</p>
+
+			<h2 id="r-bn"><i>Biscogniauxia nummularia</i></h2>
+			<p>The morphology of the isolated colony is shown in figure 3. The white filaments fill up the plate quickly and provides the base for fruiting body grow upon (the dark spots in left of figure 3).</p>
+			<p>The ITS sequence of the sample matches the NCBI Reference Sequence NR_153649.1, which came from the <a href="https://doi.org/10.1111/njb.03535">epitype</a> of <i>Hypoxylon nummularium</i>.</p>
+
+			<p class="img-cap"><img src="image/pathology-final-report_html_89eb5c94.gif" alt="Biscogniauxia nummularia"><br>Figure 3: the top view (left) and the bottom (right) of <i>Biscogniauxia nummularia</i> isolation.</p>
+
+			<h2 id="r-dh"><i>Didymella heteroderae</i></h2>
+			<p>The morphology of the isolated colony is shown in figure 4. The centre of the colony is pale brown from the top and dark inside (right of figure 4). White filaments stretches out in equal diameters and forms a puffy edge less dense of hyphae.</p>
+			<p>The ITS sequence of the sample matches the NCBI Reference Sequence NR_135963.1, which is the sequence of the <a href="https://en.wikipedia.org/wiki/Holotype">holotype</a> of <i>Didymella heteroderae</i>.</p>
+
+			<p class="img-cap"><img src="image/pathology-final-report_html_c190f02a.gif" alt="Didymella heteroderae"><br>Figure 4: the top view (left) and the bottom (right) of <i>Didymella heteroderae</i> isolation.</p>
+
+			<h2 id="r-ad"><i>Alternaria destruens</i></h2>
+			<p>The morphology of the isolated colony is shown in figure 5. The colony forms a slightly raised, circular morphology, with regular margins. The centre is dark grey, fading to whitish toward the colony edge<span class="citation"><a data-ref="#r11"><sup>[15]</sup></a><span class="tooltip"></span></span>.</p>
+			<p>The ITS sequence of the sample matches 100% to the NCBI Reference Sequence NR_137143.1 , which was cultured and sequenced from the <a href="https://en.wikipedia.org/wiki/Holotype">holotype</a> of <i>Alternaria destruens</i>.</p>
+
+			<p class="img-cap"><img src="image/pathology-final-report_html_42663ade.gif" alt="Alternaria destruens"><br>Figure 5: the top view (left) and the bottom (right) of <i>Alternaria destruens</i> isolation.</p>
+		</section>
+
+		<section id="discussion">
+			<h1>Discussion</h1>
+			<h2 id="what-fungi">What are these fungi?</h2>
+			<p>The three fungi isolated from the Salix spp. sample were all <a href="https://en.wikipedia.org/wiki/Ascomycota">Ascomycetes</a>. <a href="https://en.wikipedia.org/wiki/Ascomycota">Ascomycota</a>, or sac fungi, is the largest phylum of fungi. Many of them are pathogens to plants or animals. </p>
+
+			<p class="img-cap"><a href="https://commons.wikimedia.org/w/index.php?curid=64709"><img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Scarlet_elf_cap_cadnant_dingle.jpg" alt="Scarlet elf cap cadnant dingle.jpg" height="246"></a><br>Scarlet elf cap, <i>Sarcoscypha coccinea</i> found at cadnant dingle, north Wales.</p>
+
+			<p>The decisive characteristic of Ascomycetes is the presence of <a href="https://en.wikipedia.org/wiki/Ascus">ascus</a>, sac-like structures that contain ascospores, where sexual reproduction occurs. Ascomycetes also have <a href="https://en.wikipedia.org/wiki/Hypha">hyphae</a> that are divided by walls called septa. They also reproduce asexually with spores called <a href="https://en.wikipedia.org/wiki/Conidium">conidia</a>. Cornidia are produced on the outside of a special hyphae, conidiophores. These characteristics can be observed under microscopes.</p>
+
+			<h2 id="d-bn"><i>Biscogniauxia nummularia</i></h2>
+			<p>Under the kingdom of Fungi, the classification of <em>Biscogniauxia nummularia</em> follows Division Ascomycota, Class Sordariomycetes, Order Xylariales, Family Graphostromataceae, Genus <a href="https://en.wikipedia.org/wiki/Biscogniauxia"><em>Biscogniauxia</em></a>. <em>Biscogniauxia nummularia</em> is the type species of the genus described together in 1891 by German botanist Otto Kuntze<span class="citation"><a data-ref="#r25"><sup>[16]</sup></a><span class="tooltip"></span></span></p>
+			<p><i>Biscogniauxia nummularia</i> is also known as the beech tarcrust. The Latin “nummus”, meaning coin, refers to the coin-like black patches on the infected stems (figure 6). The fruiting body of <i>B. nummularia</i> forms a thick and shiny black crust and is found at all times of the year on deciduous trees. The fungus is <a href="https://en.wikipedia.org/wiki/Saprotrophic_nutrition">saprotrophic</a>, which decomposes wood materials to obtain nutrients.</p>
+
+			<p class="img-cap"><a href="https://www.inaturalist.org/photos/64639282"><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/64639282/medium.jpeg" alt="Beech Tarcrust from iNaturalist" width="350"></a><br>Figure 6: Beech Tarcrust (<i>Biscogniauxia nummularia</i>) photographed and uploaded to <a href="https://www.inaturalist.org/">iNaturalist</a> by <a href="https://www.inaturalist.org/people/steve_mcwilliam">Stephen James McWilliam</a> with no rights reserved.</p>
+
+			<h2 id="d-dh"><i>Didymella heteroderae</i></h2>
+			<p>Under the kingdom of Fungi, the classification of Didymella heteroderae follows Division Ascomycota, Class Dothideomycetes, Order Pleosporales, Family Didymellaceae, Genus <a href="https://en.wikipedia.org/wiki/Didymella"><i>Didymella</i></a>. </p>
+			<p>The species <i>Didymella heteroderae</i> was described only in 2015<span class="citation"><a data-ref="#r5"><sup>[17]</sup></a><span class="tooltip"></span></span>. There are currently no research specifically addressing <i>Didymella heteroderae</i> in depth<span class="citation"><a data-ref="#r33"><sup>[18]</sup></a><span class="tooltip"></span></span>. Species of <i>Didymella spp.</i> are known as plant pathogens, yet a human eye infection of <i>Didymella heteroderae</i> was reported on a contact lens user<span class="citation"><a data-ref="#r41"><sup>[19]</sup></a><span class="tooltip"></span></span>.</p>
+
+			<h2 id="d-ad"><i>Alternaria destruens</i></h2>
+			<p>Under the kingdom of Fungi, the classification of Alternaria destruens follows Division Ascomycota, Class Dothideomycetes, Order Pleosporales, Family Pleosporaceae, Genus <a href="https://en.wikipedia.org/wiki/Alternaria"><i>Alternaria</i></a>.</p>
+			<p>All species of <i>Alternaria spp.</i> are known as plant pathogens, human allergens, and opportunistic infections in immune-deprived patients. Other than pathogens, <i>A. destruens</i> are also used in biocontrol and biotechnology. It was used against pest in agriculture, such as polyphagous mealy-bug, Tinsley (<i>Phenacoccus solenopsis</i>)<span class="citation"><a data-ref="#r13"><sup>[20]</sup></a><span class="tooltip"></span></span> and dodders (<i>Cuscuta spp.</i>)<span class="citation"><a data-ref="#r9"><sup>[21]</sup></a><span class="tooltip"></span></span> on fruits, vegetable, and ornamentals including nursery grown woody shrubs<span class="citation"><a data-ref="#r35"><sup>[22]</sup></a><span class="tooltip"></span></span>. Kaur et al.<span class="citation"><a data-ref="#r21"><sup>[23]</sup></a><span class="tooltip"></span></span> also assessed <i>A. destruens</i> to be used as antimicrobial and anti-biofilm agents for diabetes patients.</p>
+
+			<h2 id="result-meaning">What does the result mean?</h2>
+			<p>The fungi we found on the willow are not common pathogens specific to willow, that could mean that the willow is exposed to large amount of pathogenic sources by the river near busy human activities. Therefore, many fungi are sampled back to the laboratory. We also did not sequence every fungi cultivated from the willow sample, which means we cannot convict these isolated fungi at this stage.</p>
+
+			<h2 id="what-next">What can we do next?</h2>
+			<p>To proceed in finding the culprit of the dying plant tissue, we can further isolate other fungi from the sample and sequence them. Next, we can apply Koch’s Postulates, that is to find another willow of the same species and infect the branches with the isolated fungi. </p>
+			<div>
+				<p>🧪 Koch’s Postulates<span class="citation"><a data-ref="#r23"><sup>[24]</sup></a><span class="tooltip"></span></span>:</p>
+				<ol>
+					<li>The suspected pathogen must be found in all diseased individuals, but not in healthy ones.</li>
+					<li>The pathogen must be isolated and grown in pure culture.</li>
+					<li>The cultured organism must cause the same disease when introduced to a healthy host of the same species.</li>
+					<li>The organism must then be re-isolated from the newly infected host and confirmed as the same pathogen.</li>
+				</ol>
+
+			</div>
+			<p>The symptom can be caused by a single fungus or a combination of fungi or other microbiomes such as bacteria or virus. After exploring the pathogenicity of the plant disease, we can finally start to proceed on treatments.</p>
+			<p>The treatments of plant disease can be as diverse as treating a human. The most economical way applied in forestry and agriculture is simply remove anything that looks wrong. It could be removing branches, trimming, or removing the entire tree or plant. Throughout the development of chemical substance, fungicides are also applied onto lands to stop or slow down fungal growth. Fungicides can be very effective to certain fungi yet may become a burden to the environment and cause irreversible effect upon other creatures.</p>
+			<p>With the help of other organisms, biocontrol methods are applied to reduce pathogenic fungi as well. However, the design of the method requires longer time and more research funding, which means higher cost. Yet biocontrol methods are also preferred these days due to rising environmental awareness.</p>
+		</section>
+
+		<section id="conclusion">
+			<h1>Conclusion</h1>
+			<p>Effective fungal treatment relies on early detection, good cultural practices, and targeted use of fungicides or bio-agents. Anthropogenic intervention of plant diseases requires cooperation among scientists, government, and farmers or society. For example, when a tree in a city is infected. The residents first need to acknowledge the abnormal of plants and report it to the local government. Then the scientists identify the disease and the government conduct the treatment. Without any players supporting the treatment, none can be done to help the plants.</p>
+		</section>
+
+		<section id="references">
+			<h1>References</h1>
+			<div style="text-indent:-0.5in;">
+			<p id="r1">Altschul, Stephen F., Warren Gish, Webb Miller, Eugene W. Myers, and David J. Lipman. ‘Basic Local Alignment Search Tool’. Journal of Molecular Biology 215, no. 3 (1990): 403–10. <a href="https://doi.org/10.1016/S0022-2836(05)80360-2">https://doi.org/10.1016/S0022-2836(05)80360-2</a>.</p>
+
+			<p id="r3">‘BLAST: Basic Local Alignment Search Tool’. Accessed 29 July 2025. <a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi">https://blast.ncbi.nlm.nih.gov/Blast.cgi</a>.</p>
+
+			<p id="r5">Chen, Q., J.R. Jiang, G.Z. Zhang, L. Cai, and P.W. Crous. ‘Resolving the Phoma Enigma’. Studies in Mycology 82, no. 1 (2015): 137–217. <a href="https://doi.org/10.1016/j.simyco.2015.10.003">https://doi.org/10.1016/j.simyco.2015.10.003</a>.</p>
+
+			<p id="r7">Ciszewska-Marciniak, Joanna, Małgorzata Jędryczka, Stanisław Jeżowski, Jerzy Przyborowski, Katarzyna Wojciechowicz, and Elżbieta Zenkteler. ‘Morphology of Uredinia and Urediniospores of the Fungus Melampsora Larici-Epitea Kleb. a Damaging Pathogen of Common Osier (Salix Viminalis L.) in Poland’. Acta Agrobotanica 63, no. 2 (2012): 117–25. <a href="https://doi.org/10.5586/aa.2010.039">https://doi.org/10.5586/aa.2010.039</a>.</p>
+
+			<p id="r9">Cook, Jennifer C., Raghavan Charudattan, Thomas W. Zimmerman, Erin N. Rosskopf, William M. Stall, and Gregory E. MacDonald. ‘Effects of Alternaria Destruens , Glyphosate, and Ammonium Sulfate Individually and Integrated for Control of Dodder ( Cuscuta Pentagona )’. Weed Technology 23, no. 4 (2009): 550–55. <a href="https://doi.org/10.1614/WT-08-019.1">https://doi.org/10.1614/WT-08-019.1</a>.</p>
+
+			<p id="r11">DeShields, Joseph B., and Achala N. Kc. ‘Morphological and Molecular Characterization of Alternaria Spp. Isolated from European Pears’. Plant Disease 105, no. 9 (2021): 2531–40. <a href="https://doi.org/10.1094/PDIS-10-20-2143-RE">https://doi.org/10.1094/PDIS-10-20-2143-RE</a>.</p>
+
+			<p id="r13">El Aalaoui, Mohamed, Said Rammali, Fatima Zahra Kamal, et al. ‘Biocontrol of Phenacoccus Solenopsis Tinsley Using Entomopathogenic Fungi and Bacteria’. Frontiers in Sustainable Food Systems 8 (October 2024): 1444917. <a href="https://doi.org/10.3389/fsufs.2024.1444917">https://doi.org/10.3389/fsufs.2024.1444917</a>.</p>
+
+			<p id="r15">European Commission. Commission Implementing Regulation (EU) 2015/1107 of 8 July 2015 Approving the Active Substance Carvone, in Accordance with Regulation (EC) No 1107/2009 of the European Parliament and of the Council Concerning the Placing of Plant Protection Products on the Market, and Amending the Annex to Commission Implementing Regulation (EU) No 540/2011. No. 181. Official Journal of the European Union, 2015. <a href="https://eur-lex.europa.eu/eli/reg_impl/2015/1107/oj/eng">https://eur-lex.europa.eu/eli/reg_impl/2015/1107/oj/eng</a>.</p>
+
+			<p id="r17">European Parliament. Directive 2001/83/EC of the European Parliament and of the Council of 6 November 2001 on the Community Code Relating to Medicinal Products for Human Use. No. 311. Official Journal of the European Union, 2001. <a href="https://eur-lex.europa.eu/eli/dir/2001/83/oj/eng">https://eur-lex.europa.eu/eli/dir/2001/83/oj/eng</a>.</p>
+
+			<p id="r19">Hariharan, Ganeshamoorthy, and Kandeeparoopan Prasannath. ‘Recent Advances in Molecular Diagnostics of Fungal Plant Pathogens: A Mini Review’. Frontiers in Cellular and Infection Microbiology 10 (January 2021): 600234. <a href="https://doi.org/10.3389/fcimb.2020.600234">https://doi.org/10.3389/fcimb.2020.600234</a>.</p>
+
+			<p id="r21">Kaur, Jasleen, Preeti Sharma, Rajvir Kaur, Sukhraj Kaur, and Amarjeet Kaur. ‘Assessment of Alpha Glucosidase Inhibitors Produced from Endophytic Fungus Alternaria Destruens as Antimicrobial and Antibiofilm Agents’. Molecular Biology Reports 47, no. 1 (2020): 423–32. <a href="https://doi.org/10.1007/s11033-019-05145-3">https://doi.org/10.1007/s11033-019-05145-3</a>.</p>
+
+			<p id="r23">Koch, Robert. ‘Die Ätiologie Der Tuberkulose’. In Berliner Klinische Wochenschrift, edited by J. Schwalbe, vol. 27. 1882. <a href="http://dx.doi.org/10.25646/5088">http://dx.doi.org/10.25646/5088</a>.</p>
+
+			<p id="r25">Kuntze, Carl Ernst Otto. ‘Revisio generum plantarum’. In Revisio generum plantarum, vol. 2. 1891. <a href="https://www.biodiversitylibrary.org/page/4266#page/1/mode/1up">https://www.biodiversitylibrary.org/page/4266#page/1/mode/1up</a>.</p>
+
+			<p id="r27">Labrecque, Michel, and Traian I. Teodorescu. ‘High Biomass Yield Achieved by Salix Clones in SRIC Following Two 3-Year Coppice Rotations on Abandoned Farmland in Southern Quebec, Canada’. Biomass and Bioenergy 25, no. 2 (2003): 135–46. <a href="https://doi.org/10.1016/S0961-9534(02)00192-7">https://doi.org/10.1016/S0961-9534(02)00192-7</a>.</p>
+
+			<p id="r29">Labrecque, Michel, Traian Ion Teodorescu, and Stéphane Daigle. ‘Biomass Productivity and Wood Energy of Salix Species after 2 Years Growth in SRIC Fertilized with Wastewater Sludge’. Biomass and Bioenergy 12, no. 6 (1997): 409–17. <a href="https://doi.org/10.1016/S0961-9534(97)00011-1">https://doi.org/10.1016/S0961-9534(97)00011-1</a>.</p>
+
+			<p id="r31">Lewis, Kathleen A., John Tzilivakis, Douglas J. Warner, and Andrew Green. ‘An International Database for Pesticide Risk Assessments and Management’. Human and Ecological Risk Assessment: An International Journal 22, no. 4 (2016): 1050–64. <a href="https://doi.org/10.1080/10807039.2015.1133242">https://doi.org/10.1080/10807039.2015.1133242</a>.</p>
+
+			<p id="r33">MycoBank. ‘Didymella Heteroderae’. Didymella Heteroderae, 2015. <a href="https://www.mycobank.org/details/708/545496">https://www.mycobank.org/details/708/545496</a>.</p>
+
+			<p id="r35">Pesticide Properties DataBase. ‘Alternaria Destruens’. Alternaria Destruens. Accessed 28 July 2025. <a href="https://sitem.herts.ac.uk/aeru/ppdb/en/Reports/2471.htm">https://sitem.herts.ac.uk/aeru/ppdb/en/Reports/2471.htm</a>.</p>
+
+			<p id="r37">Schoch, Conrad L., Keith A. Seifert, Sabine Huhndorf, et al. ‘Nuclear Ribosomal Internal Transcribed Spacer (ITS) Region as a Universal DNA Barcode Marker for Fungi’. Proceedings of the National Academy of Sciences 109, no. 16 (2012): 6241–46. <a href="https://doi.org/10.1073/pnas.1117018109">https://doi.org/10.1073/pnas.1117018109</a>.</p>
+
+			<p id="r39">Spiers, AG. ‘BOTRYOSPHAERIA-DOTHIDEA INFECTION OF SALIX SPECIES IN NEW ZEALAND’. PLANT DISEASE REPORTER 61, no. 8 (1977): 664–67.</p>
+
+			<p id="r41">Todokoro, Daisuke, Tomoko Miyakubo, Aya Komori, Koichi Makimura, and Hideo Akiyama. ‘A Case of Contact Lens-Induced Fungal Keratitis Caused by Didymella Heteroderae’. Mycopathologia 186, no. 2 (2021): 309–11. <a href="https://doi.org/10.1007/s11046-021-00536-2">https://doi.org/10.1007/s11046-021-00536-2</a>.</p>
+
+			<p id="r43">Vujanovic, Vladimir, and Michel Labrecque. ‘Potentially Pathogenic and Biocontrol Ascomycota Associated with Green Wall Structures of Basket Willow (Salix Viminalis L.) Revealed by Phenotypic Characters and ITS Phylogeny’. BioControl 53, no. 2 (2008): 413–26. <a href="https://doi.org/10.1007/s10526-007-9092-2">https://doi.org/10.1007/s10526-007-9092-2</a>.</p>
+
+			<p id="r45">‘Willow Bark: MedlinePlus Supplements’. Accessed 29 July 2025. <a href="https://medlineplus.gov/druginfo/natural/955.html">https://medlineplus.gov/druginfo/natural/955.html</a>.</p>
+
+			<p id="r47">Yun, Yeo Hong, Geum Ran Ahn, Seong Kwon Yoon, Hoo Hyun Kim, Seung Yeol Son, and Seong Hwan Kim. ‘New Rust Disease of Korean Willow (Salix Koreensis) Caused by Melampsora Yezoensis, Unrecorded Pathogen in Korea’. Mycobiology 44, no. 4 (2016): 335–37. <a href="https://doi.org/10.5941/myco.2016.44.4.335">https://doi.org/10.5941/myco.2016.44.4.335</a>.</p>
+
+			<p id="r49">Zhao, Lijuan, Weitao Zhang, Hongju Xiao, Qin Xiong, and Qiang Cheng. ‘Molecular Identification and Characterization of Elsinoë Murrayae (Synonym: Sphaceloma Murrayae) from Weeping Willow’. Journal of Phytopathology 166, no. 2 (2018): 143–49. <a href="https://doi.org/10.1111/jph.12670">https://doi.org/10.1111/jph.12670</a>.</p>
+			</div>
+		</section>
+	</div>
+
+	<footer style="text-align:center">
+		<p>© 2025 Melissa's Virtual Museum of Ecological Histories</p>
+		<p>&#127794; by Melissa Ioksin Kueh &#127794;</p>
+		<p>For any questions, please send mail to:</p>
+		<p><a style="color: #b6d2c2" href="mailto:yk112@email.uni-freiburg.de">yk112@email.uni-freiburg.de</a></p>
+		<p>Last edited: 31-07-2025</p>
+	</footer>
+
+	<script src="index-code.js"></script>
+</body>
+
+</html>
